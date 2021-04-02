@@ -10,7 +10,7 @@
 for_window [class=".*"] border pixel 5
 
 # Set gaps
-gaps inner 20
+gaps inner 30
 
 smart_borders on
 
@@ -60,11 +60,15 @@ exec --no-startup-id nm-applet
 # Set background with feh
 exec --no-startup-id feh --bg-scale /home/kyle/Documents/Backgrounds/Arch.png
 
-# Launch redshift
-exec --no-startup-id redshift -l 39:84
 
 # Launch flameshot
 exec --no-startup-id flameshot
+
+# Launch redshift
+bindsym $mod+End exec redshift -O 3700
+
+# Reset redshift
+bindsym $mod+Home exec redshift -x
 
 # Launch flameshot (snipping tool) with printscreen key
 bindsym Print exec flameshot gui
