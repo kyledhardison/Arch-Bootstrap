@@ -60,9 +60,11 @@ exec --no-startup-id nm-applet
 # Set background with feh
 exec --no-startup-id feh --bg-scale /home/kyle/Documents/Backgrounds/Arch.png
 
-
 # Launch flameshot
 exec --no-startup-id flameshot
+
+# Launch firefox
+bindsym $mod+w exec firefox
 
 # Launch redshift
 bindsym $mod+End exec redshift -O 3700
@@ -134,9 +136,9 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
