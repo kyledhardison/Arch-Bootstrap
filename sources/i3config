@@ -66,11 +66,17 @@ exec --no-startup-id flameshot
 # Launch firefox
 bindsym $mod+w exec firefox
 
-# Launch redshift
+# Launch/darken redshift
 bindsym $mod+End exec redshift -O 3700
 
 # Reset redshift
 bindsym $mod+Home exec redshift -x
+
+# Launch vscode
+bindsym $mod+c exec code
+
+# Launch signal-desktop
+bindsym $mod+s exec signal-desktop
 
 # Launch flameshot (snipping tool) with printscreen key
 bindsym Print exec flameshot gui
