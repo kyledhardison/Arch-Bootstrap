@@ -63,8 +63,8 @@ exec --no-startup-id feh --bg-scale /home/kyle/Documents/Backgrounds/Arch.png
 # Launch flameshot
 exec --no-startup-id flameshot
 
-# Launch firefox
-bindsym $mod+w exec firefox
+# Launch brave
+bindsym $mod+w exec brave
 
 # Launch/darken redshift
 bindsym $mod+End exec redshift -O 3700
@@ -103,7 +103,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec st
 
 # kill focused window
 bindsym $mod+Shift+q kill
