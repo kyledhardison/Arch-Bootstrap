@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-# TODO: Requires termite, i3, sddm, and maybe gtk-3
+# TODO: Requires st (separate repo), i3, sddm, and maybe gtk-3
 # Font: Adobe's SourceCodePro
 
 if [ $(id -u) -ne 0 ] ; then
@@ -8,6 +8,8 @@ if [ $(id -u) -ne 0 ] ; then
     exit 1
 fi
 
+echo "The commands in this script should probably be run by hand until this is tested more"
+exit 0
 
 # Setup screen orientation
 echo "xrandr --output DVI-D-0 --left-of HDMI-0" >> /usr/share/sddm/scripts/Xsetup
@@ -28,4 +30,7 @@ cp sources/i3status.conf /etc/i3status.conf
 sed --in-place 's/Numlock=none/Numlock=on/g' /usr/lib/sddm/sddm.conf.d/default.conf
 
 # Editor and browser defaults
-echo "EDITOR=/usr/bin/vim \nBROWSER=/usr/bin/firefox" >> /etc/environment
+echo "EDITOR=/usr/bin/vim \nBROWSER=/usr/bin/brave" >> /etc/environment
+
+# Let numpad/delete work in st
+echo "set enable-keypad on" >> /etc/inputrc
