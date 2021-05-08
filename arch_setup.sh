@@ -2,6 +2,8 @@
 
 # TODO: Requires st (separate repo), i3, sddm, and maybe gtk-3
 # Font: Adobe's SourceCodePro
+# st needs these to display emojis:
+# ttf-linux-libertine ttf-inconsolata ttf-twemoji-color ttf-symbola
 
 if [ $(id -u) -ne 0 ] ; then
     echo "Requires root."
