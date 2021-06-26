@@ -28,9 +28,9 @@ client.unfocused        #333333 #5f676a #ffffff #5f676a   #5f676a
 ##########################
 
 # Alt for mod
-set $mod Mod1
+# set $mod Mod1
 # Windows key for mod
-# set $mod Mod4
+set $mod Mod4
 
 # Vim bindings 
 set $up k
