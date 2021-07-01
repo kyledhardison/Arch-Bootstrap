@@ -19,9 +19,6 @@ echo "xrandr --output DVI-D-0 --left-of HDMI-0" >> /usr/share/sddm/scripts/Xsetu
 # gtk-3 dark mode
 echo "[Settings]\ngtk-application-prefer-dark-theme = true" >> ~/.config/gtk-3.0/settings.ini
 
-# Terminal config
-cp sources/termite.config ~/.config/termite/config
-
 # i3 config
 cp sources/i3config ~/.config/i3/config
 
