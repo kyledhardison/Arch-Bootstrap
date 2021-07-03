@@ -12,7 +12,7 @@ alias ll='ls -l --color=auto'
 alias la='ls -a --color=auto'
 alias l='ls --color=auto'
 alias c='clear -x'
-alias vi='vim'
+alias vi='nvim'
 alias sudo='sudo '
 
 alias ,='cd ..'
