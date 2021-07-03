@@ -26,4 +26,6 @@ set -o vi
 
 export PATH="$HOME/.local/bin:$PATH"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+export EDITOR=/usr/bin/nvim
+export BROWSER=/usr/bin/brave
 source /usr/share/bash-completion/bash_completion
