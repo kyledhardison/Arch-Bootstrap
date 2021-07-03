@@ -8,8 +8,6 @@ bind 9.16.18-1
 binutils 2.36.1-3
 bison 3.7.6-1
 brave-bin 1:1.26.74-1
-cherrytree 0.99.37-1
-chromium 91.0.4472.114-1
 code 1.56.2-3
 cronie 1.5.7-2
 cura 4.9.1-1
@@ -38,12 +36,9 @@ gnu-netcat 0.7.1-8
 go 2:1.16.5-1
 grub 2:2.06-1
 gtk2 2.24.33-2
-gunicorn 20.1.0-1
-hexchat 2.14.3-8
 hunspell-en_us 2020.12.07-3
 hwinfo 21.74-1
 hyphen-en 2.8.8-3
-i2p 0.9.50-1
 i3-gaps 4.19.1-1
 i3lock 2.13-1
 i3status 2.13-3
