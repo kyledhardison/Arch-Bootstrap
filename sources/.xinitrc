@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
@@ -34,6 +34,12 @@ fi
 
 # Swap esc and caps lock
 setxkbmap -option caps:swapescape
+
+# Set left alt to super if laptop
+if [ "$HOSTNAME" = "arch-laptop" ]; then
+    setxkbmap -option altwin:swap_lalt_lwin
+fi
+
 # Background
 exec feh --bg-scale /home/kyle/Documents/Backgrounds/Arch.png
 # Run i3
