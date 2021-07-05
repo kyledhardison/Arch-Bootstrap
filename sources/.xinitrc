@@ -33,7 +33,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # Swap esc and caps lock
-setxkbmap -option caps:swapescapK
+setxkbmap -option caps:swapescape
 # Background
 exec feh --bg-scale /home/kyle/Documents/Backgrounds/Arch.png
 # Run i3
