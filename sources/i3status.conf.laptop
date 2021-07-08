@@ -25,8 +25,9 @@ cpu_usage {
 battery all {
 	format = "%status %percentage"
 	integer_battery_capacity = true
+	last_full_capacity = true
 	threshold_type = "percentage"
-	low_threshold = 30
+	low_threshold = 40
 }
 
 wireless _first_ {
