@@ -1,0 +1,7 @@
+
+# Background
+setxkbmap -option caps:swapescape
+setxkbmap -option altwin:swap_lalt_lwin
+
+# Run i3
+exec i3
