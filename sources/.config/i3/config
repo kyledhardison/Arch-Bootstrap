@@ -63,6 +63,13 @@ exec --no-startup-id feh --bg-scale /home/kyle/Documents/Backgrounds/Arch.png
 # Launch flameshot
 exec --no-startup-id flameshot
 
+# 
+workspace 1 output DVI-D-0
+workspace 0 output HDMI-0
+# Launch first workspace to get numbering right
+exec --no-startup-id i3-msg workspace 0
+exec --no-startup-id i3-msg workspace 1 
+
 # Launch brave
 bindsym $mod+w exec brave
 
@@ -83,6 +90,9 @@ bindsym Print exec flameshot gui
 
 # i3lock binding
 bindsym $mod+Shift+x exec i3lock -c 000000
+
+# emacs binding
+bindsym $mod+e exec emacs
 
 # Ajust gaps
 bindsym $mod+Shift+t gaps inner current set 30
@@ -107,7 +117,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
