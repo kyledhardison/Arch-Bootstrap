@@ -24,8 +24,12 @@ alias ,,,,,='cd ../../../../..'
 # Set vi mode
 set -o vi
 
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.joplin:$PATH"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
 export BROWSER=/usr/bin/brave
 source /usr/share/bash-completion/bash_completion
+
+
+refresh-audio() { pacmd unload-module module-udev-detect && pacmd load-module module-udev-detect; }
