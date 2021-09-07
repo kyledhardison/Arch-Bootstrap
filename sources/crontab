@@ -1,0 +1,2 @@
+# */5 * * * * /root/duckdns/duck.sh >/dev/null 2>&1
+@reboot sleep 10 && /usr/bin/ethtool -s enp10s0 wol g 
