@@ -1,7 +1,10 @@
 #
 # https://i3wm.org/docs/userguide.html
 #
-#
+
+# Include specific config per-platform. Fails silently if file doesn't exist
+include specific-config
+
 ##########################
 # Window formatting      #
 ##########################
@@ -65,13 +68,6 @@ exec --no-startup-id flameshot
 
 # Launch Dunst - notification service
 exec --no-startup-id dunst
-
-# Assign labels to windows
-workspace 1 output DVI-D-0
-workspace 0 output HDMI-0
-# Launch first workspace to get numbering right
-exec --no-startup-id i3-msg workspace 0
-exec --no-startup-id i3-msg workspace 1 
 
 # Launch brave
 bindsym $mod+w exec brave

@@ -1,14 +1,8 @@
 #!/bin/bash
 
-# TODO: Requires st (separate repo), i3, sddm, and maybe gtk-3
+# TODO: Requires alacritty, i3, sddm, and maybe gtk-3
 # Font: Adobe's SourceCodePro
-# st needs these to display emojis:
-# ttf-linux-libertine ttf-inconsolata ttf-twemoji-color ttf-symbola
 
-if [ $(id -u) -ne 0 ] ; then
-    echo "Requires root."
-    exit 1
-fi
 
 echo "The commands in this script should probably be run by hand until this is tested more"
 exit 0
@@ -17,7 +11,7 @@ exit 0
 echo "xrandr --output DVI-D-0 --left-of HDMI-0" >> /usr/share/sddm/scripts/Xsetup
 
 # all .config and home dir stuff
-cp -r sources/.* ~/home/
+cp -r sources/.* ~/
 
 # i3status
 # TODO laptop option
