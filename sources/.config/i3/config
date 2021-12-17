@@ -60,10 +60,13 @@ exec --no-startup-id nm-applet
 # Set background with feh
 exec --no-startup-id feh --bg-scale /home/kyle/Documents/Backgrounds/Arch.png
 
-# Launch flameshot
+# Launch flameshot - screenshot tool
 exec --no-startup-id flameshot
 
-# 
+# Launch Dunst - notification service
+exec --no-startup-id dunst
+
+# Assign labels to windows
 workspace 1 output DVI-D-0
 workspace 0 output HDMI-0
 # Launch first workspace to get numbering right
@@ -103,7 +106,7 @@ bindsym $mod+Shift+g gaps inner current minus 10
 bindsym XF86MonBrightnessUp exec brightnessctl --device=intel_backlight set 10%+
 bindsym XF86MonBrightnessDown exec brightnessctl --device=intel_backlight set 10%-
 
-# Alt-tab to switch to previous window
+# $mod-tab to switch to previous window
 bindsym $mod+Tab workspace back_and_forth
 
 # Use pactl to adjust volume in PulseAudio.
