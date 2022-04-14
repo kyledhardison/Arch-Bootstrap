@@ -78,6 +78,9 @@ bindsym $mod+End exec redshift -O 3700
 # Reset redshift
 bindsym $mod+Home exec redshift -x
 
+# Clear notifications
+bindsym $mod+q exec dunstctl close-all
+
 # Launch vscode
 bindsym $mod+c exec code
 

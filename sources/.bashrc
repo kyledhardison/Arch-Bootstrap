@@ -14,12 +14,16 @@ alias l='ls --color=auto'
 alias c='clear -x'
 alias vi='nvim'
 alias sudo='sudo '
+alias g='git'
 
 alias ,='cd ..'
 alias ,,='cd ../..'
 alias ,,,='cd ../../..'
 alias ,,,,='cd ../../../..'
 alias ,,,,,='cd ../../../../..'
+
+# disable ctrl+s to lock the terminal
+stty -ixon
 
 # Set vi mode
 set -o vi
@@ -31,5 +35,13 @@ export VISUAL=/usr/bin/nvim
 export BROWSER=/usr/bin/brave
 source /usr/share/bash-completion/bash_completion
 
+###############################################################################
+# FUNCTIONS
+###############################################################################
 
+# Refresh all audio devices - useful when hot swapping
 refresh-audio() { pacmd unload-module module-udev-detect && pacmd load-module module-udev-detect; }
+
+# Extract zip files from thingiverse and remove everything except for the relevant STLs
+extract-thingiverse () { unzip -j $1 && find . -type f ! -name "*.stl" -exec rm {} +; }
+

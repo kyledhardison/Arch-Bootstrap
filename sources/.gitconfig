@@ -1,0 +1,18 @@
+[user]
+	email = kyledhardison@gmail.com
+	name = Kyle Hardison
+
+[alias]
+    s = status
+    ch = checkout
+    cb = checkout -b 
+    br = branch
+    a = add
+    au = add -u
+    aa = add -A
+    cm = commit
+    d = diff
+    p = pull
+    pu = push
+[core]
+	autocrlf = false
