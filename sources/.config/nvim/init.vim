@@ -11,7 +11,6 @@ set relativenumber
 set scrolloff=5
 set cursorline
 set autoindent
-set conceallevel=1
 
 " Jump to last location if valid
 if has("autocmd")
@@ -23,6 +22,7 @@ Plug 'https://github.com/preservim/nerdtree.git'
 Plug 'https://github.com/kien/ctrlp.vim.git'
 call plug#end()
 
+" Key Bindings
 nnoremap <F5> :NERDTreeToggle<CR>
 nnoremap <F6> :NERDTreeFind<CR>
 
