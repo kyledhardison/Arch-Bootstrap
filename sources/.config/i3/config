@@ -96,6 +96,9 @@ bindsym $mod+Shift+x exec i3lock -c 000000
 # emacs binding
 bindsym $mod+e exec emacs
 
+# Launch pavucontrol
+bindsym $mod+p exec pavucontrol
+
 # Ajust gaps
 bindsym $mod+t gaps inner current set 30
 bindsym $mod+Shift+g gaps inner current plus 10

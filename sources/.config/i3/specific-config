@@ -1,9 +1,11 @@
 # Desktop-specific config
 
 # Assign labels to windows
-workspace 1 output DVI-D-0
-workspace 0 output HDMI-0
+workspace 1 output HDMI-0
+workspace 0 output DP-0
 # Launch first workspace to get numbering right
 exec --no-startup-id i3-msg workspace 0
 exec --no-startup-id i3-msg workspace 1 
+
+exec --no-startup-id solaar
 

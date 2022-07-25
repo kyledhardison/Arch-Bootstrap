@@ -1,3 +1,4 @@
+set nocompatible
 
 syntax on
 set mouse=a
@@ -11,6 +12,7 @@ set relativenumber
 set scrolloff=1
 set cursorline
 set autoindent
+filetype plugin on
 
 " Ignore case if search is all lowercase
 set ignorecase
@@ -24,8 +26,13 @@ set splitbelow
 let mapleader = " "
 
 " Normal Mode Key Bindings
+" NERDTree
 nnoremap <F5> :NERDTreeToggle<CR>
 nnoremap <F6> :NERDTreeFind<CR>
+" wikivim
+nnoremap <leader><CR> :VimwikiTabnewLink<CR>
+nnoremap <leader>v<CR> :VimwikiVSplitLink<CR>
+nnoremap <leader>s<CR> :VimwikiSplitLink<CR>
 
 " Command remappings
 :command WQ wq
@@ -43,6 +50,7 @@ endif
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'https://github.com/preservim/nerdtree.git'
 Plug 'https://github.com/kien/ctrlp.vim.git'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 " Clear cmd line message
