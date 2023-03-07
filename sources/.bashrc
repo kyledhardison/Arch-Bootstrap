@@ -12,9 +12,11 @@ alias ll='ls -l --color=auto'
 alias la='ls -a --color=auto'
 alias l='ls --color=auto'
 alias c='clear -x'
+alias cl='clear'
 alias vi='nvim'
 alias sudo='sudo '
 alias g='git'
+alias f='fg'
 
 alias ,='cd ..'
 alias ,,='cd ../..'
@@ -28,7 +30,8 @@ stty -ixon
 # Set vi mode
 set -o vi
 
-export PATH="$HOME/.local/bin:$HOME/.joplin:$PATH"
+export HISTIGNORE='l:ls:la:c:cl:f:,:,,:,,,:,,,,:,,,,,'
+export PATH="$HOME/.local/bin:/home/kyle/.cargo/bin:$PATH"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
